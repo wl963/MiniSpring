@@ -4,16 +4,16 @@ import com.mini.beans.*;
 import com.mini.core.ClassPathXmlResource;
 import com.mini.core.Resource;
 
-public class ClassPathXmlApplicationContext implements BeanFactory {
+public class ClassPathXmlApplicationContext implements BeanFactory , ApplicationEventPublisher{
 
     private BeanFactory beanFactory;
 
     public ClassPathXmlApplicationContext(String fileName) {
         Resource resource=new ClassPathXmlResource(fileName);
-        BeanFactory beanFactory=new SimpleBeanFactory();
-        XmlBeanDefinitionReader definitionReader = new XmlBeanDefinitionReader(beanFactory);
+        SimpleBeanFactory simpleBeanFactory=new SimpleBeanFactory();
+        XmlBeanDefinitionReader definitionReader = new XmlBeanDefinitionReader(simpleBeanFactory);
         definitionReader.loadBeanDefinitions(resource);
-        this.beanFactory=beanFactory;
+        this.beanFactory=simpleBeanFactory;
     }
 
     @Override
@@ -22,7 +22,28 @@ public class ClassPathXmlApplicationContext implements BeanFactory {
     }
 
     @Override
-    public void registerBeanDefinition(BeanDefinition beanDefinition) {
-        this.beanFactory.registerBeanDefinition(beanDefinition);
+    public Boolean containsBean(String name) {
+        return null;
+    }
+
+    @Override
+    public boolean isSingleton(String name) {
+        return false;
+    }
+
+    @Override
+    public boolean isPrototype(String name) {
+        return false;
+    }
+
+    @Override
+    public Class<?> getType(String name) {
+        return null;
+    }
+
+
+    @Override
+    public void publishEvent(ApplicationEvent event) {
+
     }
 }

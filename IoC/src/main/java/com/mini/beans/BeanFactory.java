@@ -2,5 +2,10 @@ package com.mini.beans;
 
 public interface BeanFactory {
     Object getBean(String beanName) throws BeansException, ClassNotFoundException;
-    void registerBeanDefinition(BeanDefinition beanDefinition);
+    Boolean containsBean(String name);
+
+    boolean isSingleton(String name);
+
+    boolean isPrototype(String name);
+    Class<?> getType(String name);
 }
