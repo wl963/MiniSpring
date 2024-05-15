@@ -1,11 +1,13 @@
-package com.mini.beans;
+package com.mini.beans.factory.support;
+
+import com.mini.beans.factory.config.SingletonBeanRegistry;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry{
+public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
     protected List<String> beanNames=new ArrayList<>();
     protected Map<String,Object> singletons= new ConcurrentHashMap<>(256);
     @Override

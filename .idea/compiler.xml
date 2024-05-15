@@ -9,9 +9,5 @@
         <module name="Annotation" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="IoC (1)" target="19" />
-      <module name="IoC (2)" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>

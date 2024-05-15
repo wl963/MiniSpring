@@ -1,4 +1,6 @@
-package com.mini.beans;
+package com.mini.beans.factory.support;
+
+import com.mini.beans.factory.config.BeanDefinition;
 
 public interface BeanDefinitionRegistry {
     void registerBeanDefinition(String name, BeanDefinition bd);

@@ -1,4 +1,6 @@
-package com.mini.beans;
+package com.mini.beans.factory;
+
+import com.mini.beans.BeansException;
 
 public interface BeanFactory {
     Object getBean(String beanName) throws BeansException, ClassNotFoundException;
