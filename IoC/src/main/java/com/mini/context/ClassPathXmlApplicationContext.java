@@ -6,14 +6,22 @@ import com.mini.core.Resource;
 
 public class ClassPathXmlApplicationContext implements BeanFactory , ApplicationEventPublisher{
 
-    private BeanFactory beanFactory;
+    private SimpleBeanFactory beanFactory;
 
-    public ClassPathXmlApplicationContext(String fileName) {
+    public ClassPathXmlApplicationContext(String fileName){
+        this(fileName,true);
+    }
+
+    public ClassPathXmlApplicationContext(String fileName,boolean isRefresh) {
         Resource resource=new ClassPathXmlResource(fileName);
         SimpleBeanFactory simpleBeanFactory=new SimpleBeanFactory();
         XmlBeanDefinitionReader definitionReader = new XmlBeanDefinitionReader(simpleBeanFactory);
         definitionReader.loadBeanDefinitions(resource);
         this.beanFactory=simpleBeanFactory;
+        if(isRefresh)
+        {
+            this.beanFactory.refresh();
+        }
     }
 
     @Override
