@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="IoC" />
+        <module name="Annotation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="IoC (1)" target="19" />
+      <module name="IoC (2)" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>
