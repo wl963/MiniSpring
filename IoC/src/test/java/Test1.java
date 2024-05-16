@@ -9,8 +9,7 @@ public class Test1 {
         AService aservice =(AService) context.getBean("aservice");
         aservice.sayHello();
 
-        People people = (People) context.getBean("people");
-        System.out.println(people.getName()+""+people.getAge());
+
 
     }
 }
