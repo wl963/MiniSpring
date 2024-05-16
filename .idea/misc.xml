@@ -8,10 +8,20 @@
         <option value="$PROJECT_DIR$/IoC/pom.xml" />
         <option value="$PROJECT_DIR$/Annotation/pom.xml" />
         <option value="$PROJECT_DIR$/Factory/pom.xml" />
+        <option value="$PROJECT_DIR$/MVC_1/pom.xml" />
+        <option value="$PROJECT_DIR$/MVC1/pom.xml" />
+        <option value="$PROJECT_DIR$/MVC/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/MVC/pom.xml" />
+        <option value="$PROJECT_DIR$/MVC1/pom.xml" />
+        <option value="$PROJECT_DIR$/MVC_1/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" project-jdk-name="19" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19_PREVIEW" project-jdk-name="19" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

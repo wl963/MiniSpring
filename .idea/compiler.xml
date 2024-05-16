@@ -11,5 +11,8 @@
         <module name="Annotation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MVC_1" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>
