@@ -53,10 +53,6 @@ public class ClassPathXmlApplicationContext extends AbstractApplicationContext{
         this.beanFactory.refresh();
     }
 
-    @Override
-    public Object getBean(String beanName) throws BeansException, ClassNotFoundException {
-        return beanFactory.getBean(beanName);
-    }
 
 
     @Override

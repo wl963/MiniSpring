@@ -34,6 +34,7 @@ public abstract class AbstractApplicationContext implements ApplicationContext{
         registerListeners();
         finishRefresh();
     }
+
     abstract void registerListeners();
     abstract void initApplicationEventPublisher();
     abstract void postProcessBeanFactory(ConfigurableListableBeanFactory

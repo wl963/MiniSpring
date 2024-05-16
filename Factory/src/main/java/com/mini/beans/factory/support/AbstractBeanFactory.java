@@ -1,5 +1,6 @@
 package com.mini.beans.factory.support;
 
+import com.mini.beans.factory.ConfigurableBeanFactory;
 import com.mini.beans.factory.support.BeanDefinitionRegistry;
 import com.mini.beans.factory.config.BeanDefinition;
 import com.mini.beans.BeansException;
@@ -17,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory, BeanDefinitionRegistry {
+public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory, BeanDefinitionRegistry {
 
     public Map<String, BeanDefinition> beanDefinitions = new ConcurrentHashMap<>();
 
