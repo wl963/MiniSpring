@@ -93,7 +93,7 @@ public class DispatcherServlet extends HttpServlet {
 		File dir=new File(uri);
 		for (File file:dir.listFiles()) {
 			if(file.isDirectory()) {
-				scanPackage(packageName+"."+file.getName());
+				tempControllerNames.addAll(scanPackage(packageName+"."+file.getName()));
 			} else {
 				String controllerName=packageName+"."+file.getName().replace(".class","");
 				tempControllerNames.add(controllerName);

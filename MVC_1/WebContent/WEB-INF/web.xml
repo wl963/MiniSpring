@@ -8,7 +8,9 @@
       <param-value> /WEB-INF/minisMVC-servlet.xml </param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
+
   </servlet>
+
   <servlet-mapping>
     <servlet-name>MVC_1</servlet-name>
     <url-pattern>/</url-pattern>
