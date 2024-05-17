@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MVC_1/MVC_1.iml" filepath="$PROJECT_DIR$/MVC_1/MVC_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MVC_2/MVC_2.iml" filepath="$PROJECT_DIR$/MVC_2/MVC_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/minispring.iml" filepath="$PROJECT_DIR$/minispring.iml" />
     </modules>
   </component>

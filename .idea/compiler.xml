@@ -13,6 +13,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="MVC_1" target="19" />
+      <module name="MVC_2" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>
