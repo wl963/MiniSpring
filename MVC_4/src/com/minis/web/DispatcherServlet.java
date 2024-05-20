@@ -3,10 +3,6 @@ package com.minis.web;
 
 import com.minis.beans.BeansException;
 import com.minis.beans.factory.annotation.Autowired;
-import com.minis.web.servlet.HandlerAdapter;
-import com.minis.web.servlet.HandlerMapping;
-import com.minis.web.servlet.RequestMappingHandlerAdapter;
-import com.minis.web.servlet.RequestMappingHandlerMapping;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;

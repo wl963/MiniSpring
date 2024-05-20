@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--<beans>-->
+<!--    <bean id="/helloworld" class="com.test.com.minis.HelloWorldBean" value="doGet"/>-->
+<!--</beans>-->
+
+<components>
+    <component-scan base-package="com.minis.test.controller" />
+</components>
