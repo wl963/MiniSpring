@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="AOP_2:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/AOP_2_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="AOP_2" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/AOP_2/WebContent/WEB-INF/lib/dom4j-1.6.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/AOP_2/WebContent/WEB-INF/lib/servlet-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/AOP_2/WebContent/WEB-INF/lib/mysql-connector-j-8.4.0.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="AOP_2/web/Web" />
+    </root>
+  </artifact>
+</component>
